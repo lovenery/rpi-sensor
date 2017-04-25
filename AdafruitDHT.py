@@ -48,7 +48,6 @@ while 1:
     # the results will be null (because Linux can't
     # guarantee the timing of calls to read the sensor).
     # If this happens try again!
-    time.sleep(10)
     if humidity is not None and temperature is not None:
         print('Temp={0:0.1f}*  Humidity={1:0.1f}%'.format(temperature, humidity))
 
@@ -59,3 +58,6 @@ while 1:
     else:
         print('Failed to get reading. Try again!')
         sys.exit(1)
+
+    time.sleep(10)
+
