@@ -9,5 +9,5 @@
 ```bash
 # /etc/rc.local
 
-sh ${HOME}/rpi-sensor/init.sh &
+sh ${HOME}/rpi-sensor/init.sh > /dev/null 2>&1 &
 ```
